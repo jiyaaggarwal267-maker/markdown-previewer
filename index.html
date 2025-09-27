@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Previewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Markdown Previewer</h1>
+    
+    <div class="controls">
+      <button id="downloadBtn" class="downloadBtn">Download HTML</button>
+      <button id="themeBtn" class="themeBtn">Toggle Theme</button>
+    </div>
+
+    <div class="editor-preview">
+      <div class="input-container">
+        <textarea id="markdown" placeholder="Enter Markdown here..."></textarea>
+        <button id="clearBtn" class="clearBtn">Clear</button>
+      </div>
+      <div id="preview"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
